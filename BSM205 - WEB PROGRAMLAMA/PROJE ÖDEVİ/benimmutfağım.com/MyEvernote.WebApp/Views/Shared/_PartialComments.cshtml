@@ -1,0 +1,64 @@
+﻿@using MyEvernote.Entities
+@using MyEvernote.WebApp.Models
+
+@model List<Comment>
+
+@{
+    EvernoteUser user = CurrentSession.User;
+}
+
+@foreach (Comment item in Model)
+{
+    <div class="media">
+        <div class="media-left media-top">
+            <div class="media-object">
+                <span class="glyphicon glyphicon-comment"></span>
+            </div>
+        </div>
+        <div class="media-body">
+            <div>
+                <span class="col-md-10" id="comment_text_@item.Id" contenteditable="false">
+                    @item.Text
+                </span>
+
+                @if (user != null && user.Id == item.Owner.Id)
+                {
+                    <span class="col-md-2 text-right">
+                        <button type="button" class="btn btn-warning btn-xs" data-edit-mode="false" onclick="doComment(this,'edit_clicked',@item.Id,'#comment_text_@item.Id');">
+                            <span class="glyphicon glyphicon-edit"></span>
+                        </button>
+                        <button type="button" class="btn btn-danger btn-xs" onclick="doComment(this,'delete_clicked',@item.Id);">
+                            <span class="glyphicon glyphicon-trash"></span>
+                        </button>
+                    </span>
+                }
+
+                <small class="col-md-12 text-right">
+                    <span class="glyphicon glyphicon-time"></span> @item.ModifiedOn &nbsp;&nbsp;&nbsp;&nbsp;
+                    <span class="glyphicon glyphicon-user"></span> @item.Owner.Username
+                </small>
+            </div>
+        </div>
+    </div>
+}
+
+@if (user != null)
+{
+    <div class="row">
+        <div class="col-md-12">
+            <hr />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="input-group">
+                <input type="text" id="new_comment_text" class="form-control" placeholder="yorumunuz..">
+                <span class="input-group-btn">
+                    <button class="btn btn-success" type="button" onclick="doComment(this,'new_clicked',-1);">
+                        <span class="glyphicon glyphicon-send"></span> Gönder
+                    </button>
+                </span>
+            </div>
+        </div>
+    </div>
+}

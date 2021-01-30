@@ -1,0 +1,9 @@
+C:\Users\ASUS\documents\visual studio 2015\Projects\WindowsFormsApplication21\WindowsFormsApplication21\bin\Debug\WindowsFormsApplication21.exe.config
+C:\Users\ASUS\documents\visual studio 2015\Projects\WindowsFormsApplication21\WindowsFormsApplication21\obj\Debug\WindowsFormsApplication21.exe
+C:\Users\ASUS\documents\visual studio 2015\Projects\WindowsFormsApplication21\WindowsFormsApplication21\obj\Debug\WindowsFormsApplication21.pdb
+C:\Users\ASUS\documents\visual studio 2015\Projects\WindowsFormsApplication21\WindowsFormsApplication21\obj\Debug\WindowsFormsApplication21.csprojResolveAssemblyReference.cache
+C:\Users\ASUS\documents\visual studio 2015\Projects\WindowsFormsApplication21\WindowsFormsApplication21\obj\Debug\WindowsFormsApplication21.AnaPencerem.resources
+C:\Users\ASUS\documents\visual studio 2015\Projects\WindowsFormsApplication21\WindowsFormsApplication21\obj\Debug\WindowsFormsApplication21.Properties.Resources.resources
+C:\Users\ASUS\documents\visual studio 2015\Projects\WindowsFormsApplication21\WindowsFormsApplication21\obj\Debug\WindowsFormsApplication21.csproj.GenerateResource.Cache
+C:\Users\ASUS\documents\visual studio 2015\Projects\WindowsFormsApplication21\WindowsFormsApplication21\bin\Debug\WindowsFormsApplication21.exe
+C:\Users\ASUS\documents\visual studio 2015\Projects\WindowsFormsApplication21\WindowsFormsApplication21\bin\Debug\WindowsFormsApplication21.pdb

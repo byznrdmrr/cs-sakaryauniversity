@@ -1,0 +1,75 @@
+.boxes figure {
+	margin: 0;
+	position: relative;
+}
+
+.boxes figure img {
+	max-width: 100%;
+	display: block;
+	position: relative;
+}
+
+.boxes figcaption {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 20px;
+	background: #2c3f52;
+	color: #ed4e6e;
+}
+
+.boxes figcaption h3 {
+	margin: 0;
+	padding: 0;
+	color: #fff;
+}
+
+.boxes figcaption span:before {
+	content: 'by ';
+}
+
+.boxes figcaption a {
+	text-align: center;
+	padding: 5px 10px;
+	border-radius: 2px;
+	display: inline-block;
+	background: #ed4e6e;
+	color: #fff;
+}
+
+/* Individual Caption Styles */
+
+/* Caption Style 1 */
+.boxes figcaption {
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	text-align: center;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+	-moz-transition: -moz-transform 0.3s, opacity 0.3s;
+	transition: transform 0.3s, opacity 0.3s;
+}
+
+.boxes figure:hover figcaption,
+.boxes figcaption {
+	opacity: 1;
+	-webkit-transform: translate(15px, 15px);
+	-moz-transform: translate(15px, 15px);
+	-ms-transform: translate(15px, 15px);
+	transform: translate(15px, 15px);
+}
+
+.boxes figcaption h3 {
+	margin-top: 70px;
+}
+
+.boxes figcaption span {
+	display: block;
+}
+
+.boxes figcaption a {
+	margin-top: 30px;
+}

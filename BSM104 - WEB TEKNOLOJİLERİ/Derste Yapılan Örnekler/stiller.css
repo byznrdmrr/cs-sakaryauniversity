@@ -1,0 +1,24 @@
+p{
+	font-size:24pt; 
+	color:#ffcc00;
+	text-align:center;
+}
+
+#bm{   <!--ID olanlar için # kullanılır, class için . kullanılır --> 
+	font-size:24pt; 
+	color:#ffccbb;
+	text-align:center;
+	font-weight:bold;
+}
+
+.dersler{
+	font-size:18pt; 
+	color:#0000ff;
+	text-align:center;
+	font-weight:bold;
+}
+
+.icerik{
+	font-size:18pt; 
+	color:#0000ff;
+}

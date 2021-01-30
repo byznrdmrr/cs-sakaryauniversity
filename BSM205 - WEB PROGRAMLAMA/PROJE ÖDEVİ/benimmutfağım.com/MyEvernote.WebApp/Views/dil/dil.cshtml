@@ -1,0 +1,11 @@
+﻿
+@{
+    ViewBag.Title = "dil";
+}
+
+<ul>
+    <li>@Html.ActionLink("Türkçe", "Change", "dil", new {LanguageAbbrevatio="tr"}, null) </li>
+    <li>@Html.ActionLink("İngilizce", "Change", "dil", new { LanguageAbbrevatio = "en" }, null) </li>
+    <li>@DateTime.Now.ToString()</li>
+</ul>
+

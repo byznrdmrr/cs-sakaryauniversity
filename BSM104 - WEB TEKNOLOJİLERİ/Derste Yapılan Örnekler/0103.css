@@ -1,0 +1,36 @@
+body
+{
+	background-color:#D9F7D1;
+	font-family:verdana,Arial;
+	font-size:14px;
+	color:#48098C;
+}
+ #arkaplan{
+	 background-color:#F0CECF;
+	 font-family:Verdana, Arial, Tahoma;
+	 font-size:14px;
+	 color:#48098C;
+	 text-align:right;
+	 height:20px;
+	 width:50%;
+	 
+ }
+#resimArkaplan
+{
+	background-image:url(deskktop/türkiye_orta.jpg);
+	font-family:Verdana,Arial,Tahoma;
+	font-size:20px;
+	font-weight:bold;
+	color:#ffffff;
+	text-align:center;
+	height:100px;
+	width:80%;	
+}
+span{
+	background-color:#4F3977;
+	color:#ECDEDE;
+	font-family:"Gill Sans", Helvetica, Arial, sans-serif;
+	font-size:12px;
+
+
+}

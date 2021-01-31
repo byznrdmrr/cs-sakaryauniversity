@@ -1,0 +1,18 @@
+C:\Users\ASUS\Desktop\web programlama\uygulamalar\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+C:\Users\ASUS\Desktop\web programlama\uygulamalar\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+C:\Users\ASUS\Desktop\web programlama\uygulamalar\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+C:\Users\ASUS\Desktop\web programlama\uygulamalar\ConsoleApplication1\ConsoleApplication1\obj\Debug\BicimselDillerOdev.csprojResolveAssemblyReference.cache
+C:\Users\ASUS\Desktop\web programlama\uygulamalar\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+C:\Users\ASUS\Desktop\web programlama\uygulamalar\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb
+C:\Users\ASUS\Desktop\BiçimselÖdev\uygulamalar\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+C:\Users\ASUS\Desktop\BiçimselÖdev\uygulamalar\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+C:\Users\ASUS\Desktop\BiçimselÖdev\uygulamalar\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb
+C:\Users\ASUS\Desktop\BiçimselÖdev\uygulamalar\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+C:\Users\ASUS\Desktop\BiçimselÖdev\uygulamalar\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+C:\Users\ASUS\Desktop\BiçimselÖdev\uygulamalar\ConsoleApplication1\ConsoleApplication1\obj\Debug\BicimselDillerOdev.csprojResolveAssemblyReference.cache
+C:\Users\ASUS\Desktop\BiçimselÖdev\uygulamalar\G161210045\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+C:\Users\ASUS\Desktop\BiçimselÖdev\uygulamalar\G161210045\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+C:\Users\ASUS\Desktop\BiçimselÖdev\uygulamalar\G161210045\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb
+C:\Users\ASUS\Desktop\BiçimselÖdev\uygulamalar\G161210045\G161210045\bin\Debug\ConsoleApplication1.exe.config
+C:\Users\ASUS\Desktop\BiçimselÖdev\uygulamalar\G161210045\G161210045\obj\Debug\ConsoleApplication1.exe
+C:\Users\ASUS\Desktop\BiçimselÖdev\uygulamalar\G161210045\G161210045\obj\Debug\ConsoleApplication1.pdb

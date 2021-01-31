@@ -1,0 +1,45 @@
+﻿@using MyEvernote.Entities.ValueObjects
+@model LoginViewModel
+
+@{
+    ViewBag.Title = "MyEvernote - Giriş Sayfası";
+}
+
+<link href="~/Content/login-register.css" rel="stylesheet" />
+<link href="~/Content/validation-summary.css" rel="stylesheet" />
+
+@using (Html.BeginForm())
+{
+    <section class="login-info">
+        <div class="container">
+            <div class="row main">
+                <div class="form-header">
+                    <h1 class="text-center ">Giriş Formu</h1>
+                </div>
+                <div class="main-content">
+
+                    @Html.ValidationSummary(false)
+
+                    @*@if (ViewBag.SetLink != null)
+                    {
+                        <a href="@ViewBag.SetLink" class="btn btn-primary">Activate</a>
+                    }*@
+
+                    <div class="input-group ">
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></span>
+                        @Html.TextBoxFor(model => model.Username, new { @class = "form-control", placeholder = "Kullanıcı adınız" })
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-lock" aria-hidden="true"></span></span>
+                        @Html.TextBoxFor(model => model.Password, new { @class = "form-control", placeholder = "Şifreniz", type = "password" })
+                    </div>
+
+                    <div class="form-group ">
+                        <button type="submit" class="btn btn-danger btn-lg btn-block login-button">Giriş</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+}

@@ -1,0 +1,141 @@
+
+
+/*Slider*/
+.slider-relative {
+	position:relative;
+	overflow: hidden;
+	margin-top: 70px;
+	margin-left: 50px;
+}
+
+
+.items {
+	display: none;	
+	overflow: hidden;
+}
+
+.slider-block {
+	position:relative;
+	height: 724px;
+	
+}
+.slider {
+	z-index:2;
+	overflow: visible !important;
+	height: 724px;
+
+	position: relative;
+}
+
+
+/*
+
+.pagination {
+bottom: 14px;
+position: absolute;
+right: 157px;
+z-index: 999;
+}
+
+.pagination li {
+	float: left;
+}
+
+.pagination li+li {
+	margin-left: 4px;
+}
+
+
+.pagination  li a{
+	width: 15px;
+	display: block;
+		transition: 0s ease;
+	-o-transition: 0s ease;
+	-webkit-transition: 0s ease;
+	height: 15px;
+	background: url(../images/pagination.png) right 0 no-repeat;
+}
+
+.pagination li a:hover, .pagination li.current a {
+	background-position: 0 0;
+}
+*/
+
+
+a.prev, a.next {
+	width: 56px;
+	background: url(../images/prevnext.png) 0 0 no-repeat;
+	height: 112px;
+	position: absolute;
+	display: block;
+	bottom: 49px;
+	z-index: 999;
+	left: 45px;
+
+}
+
+a.next {
+	left: 101px;
+	width: 57px;
+	background-position: right bottom;
+
+}
+
+a.next:hover,a.prev:hover  {
+	opacity: 0.8;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.slider .banner{
+	top: 320px;
+	left: 0px;
+	position: absolute;
+	font-family: 'Tahoma', sans-serif;;
+	color: #fff;	
+	text-transform: uppercase;
+}
+
+.slider .banner div {
+	font-size: 28px;
+	line-height: 65px;
+	color: #263555;
+	padding: 4px 19px 6px 19px;
+	background: #fff;
+	display: inline-block;
+}
+
+.slider .banner span {
+	padding: 3px 15px 7px 19px;
+	display: inline-block;
+	font-size: 40px;
+	line-height: 64px;
+	background: #38afe5;
+}
+

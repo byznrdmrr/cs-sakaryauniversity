@@ -1,0 +1,38 @@
+﻿
+@{
+    ViewBag.Title = "About";
+}
+
+<!-- Page Content -->
+<div class="container">
+    <div class="row">
+        <!-- Kategoriler -->
+        <div class="col-md-3">
+            @Html.Partial("_PartialCategories")
+        </div>
+
+        <div class="col-md-7 col-md-offset-1">
+
+            <div class="row">
+                <h2 class="text-center">
+                    HAKKIMIZDA
+                </h2>
+                <hr />
+                <img src="~/Images/hakkımızda/hakkimizda.jpg" class="center-block img-responsive img-rounded img-thumbnail" alt="Alternate Text" />
+                <hr />
+                <p>İştah açan, ilham veren, ağız sulandıran... Sadece yemek tarifleri değil... Güldürürken yediren...</p>
+                <p>Yemek.com, sevgilisini mutlu etmek için İtalyan mutfağını öğrenenin de, işi gücü bırakıp güneyde şarap üretmeyi, en olmadı Cihangir'de pilavcı açmayı hayal edenin de, övünerek anlatabildiği tek mutfak becerisi menemen olanın da, yurt dışına her çıkışında yemek yiyeceği yerlere göre otelini seçenin de, o gün yediği dev bir sufle için bütün hafta boyunca yediklerine dikkat etme zorunluluğu hissedenin de, yemeğin tadına bakmadan tuz atanın da, Instagram'a fotoğraf atabilmek için yemeğini soğutmayı göze alanın da sitesi.</p>
+                <p>Sadece karnını doyurmak isteyenler için değil, bir hazzın peşinde koşanlar için.</p>
+                <p>Farklı zevklerden ve renklerden gelen iştahlı ekibi ve dışarıdan katkı sağlayan birçok dostu ve partneri ile Yemek.com kocaman, upuzun, rengarenk bir masa kurdu ve bu masada epey sandalye var.</p>
+                <p>Bu nefis masada sizin de bir sandalyeniz var. İster yazar olarak, ister okur olarak.</p>
+                <p>İyi ki geldiniz, yine gelin.</p>
+                <p>Sevgiler bizden.</p>
+                <p>Benimmutfağım.com</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section footer{
+    @Html.Partial("_PartialFooter")
+}

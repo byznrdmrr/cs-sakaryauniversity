@@ -1,0 +1,48 @@
+/**/
+@import url(//fonts.googleapis.com/css?family=Pathway+Gothic+One);
+@import url(//fonts.googleapis.com/css?family=Open+Sans+Condensed:300);
+
+
+
+#tabs ul li, .newsletter_title, #newsletter input, a.btn, ul.list1 .count, .blog time  { behavior:url(js/PIE.htc); position:relative;}
+
+.sf-menu li ul,.sf-menu li.sfHover>ul{ behavior:url(js/PIE.htc); position: absolute;}
+
+.socials a:hover  {
+filter:progid:DXImageTransform.Microsoft.Alpha(opacity=50);
+
+}
+
+a.next:hover,a.prev:hover, #newsletter a:hover {
+	filter:progid:DXImageTransform.Microsoft.Alpha(opacity=50);
+
+}
+
+a.gal:hover  img{
+	filter:progid:DXImageTransform.Microsoft.Alpha(opacity=50);
+}
+
+.boxes figure figcaption {
+	display: none;
+}
+
+.boxes figure:hover figcaption {
+	display: block;
+}
+
+.boxes figure:hover  img {
+	margin-left: 183px;
+}
+
+
+#newsletter input {
+	padding-top: 3px;
+}
+
+.none {
+	display: inline-block;
+	width: 18px;
+}
+.btns a.btn {
+	margin-left: 0px !important;
+}

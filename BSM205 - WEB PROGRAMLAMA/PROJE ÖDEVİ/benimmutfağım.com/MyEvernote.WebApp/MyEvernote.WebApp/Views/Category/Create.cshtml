@@ -1,0 +1,57 @@
+﻿@using MyEvernote.WebApp
+@model MyEvernote.Entities.Category
+
+@{
+    ViewBag.Title = "Kategori Ekle";
+}
+
+<link href="~/Content/validation-summary.css" rel="stylesheet" />
+
+<div class="row">
+    <div class="col-md-8 col-md-offset-2">
+        <h2>@ViewBag.Title</h2>
+        <hr />
+    </div>
+</div>
+
+<div class="row">
+
+    <div class="col-md-4 col-md-offset-4">
+
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+
+            <div class="form-horizontal">
+                <h4>Kategori</h4>
+                <hr />
+
+                @Html.ValidationSummary(false)
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Title, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.Title, new { htmlAttributes = new { @class = "form-control" } })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Description, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.Description, new { htmlAttributes = new { @class = "form-control" } })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+                        @Bootstrap.Button("success", string.Empty, "submit", "plus", " Kaydet")
+                        @Bootstrap.LinkButton("/Category/Index", "default", string.Empty, string.Empty, "arrow-left", " Back to List")
+                    </div>
+                </div>
+            </div>
+        }
+
+    </div>
+
+
+</div>

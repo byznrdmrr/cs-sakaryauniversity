@@ -1,0 +1,79 @@
+﻿@model IEnumerable<MyEvernote.Entities.Note>
+
+@{
+    ViewBag.Title = "Notlarım";
+}
+
+<div class="row">
+
+    <div class="col-md-10 col-md-offset-1">
+        <h2>@ViewBag.Title</h2>
+        <hr />
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-10 col-md-offset-1">
+        <p>
+            @Bootstrap.LinkButton("/Note/Create", "primary", string.Empty, string.Empty, "plus", " Yeni")
+        </p>
+        <table class="table">
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Category.Title)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Title)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Text)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.IsDraft)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.LikeCount)
+                </th>
+                <th></th>
+            </tr>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Category.Title)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Title)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Text)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.IsDraft)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.LikeCount)
+                    </td>
+                    <td width="150">
+                        <button type="button" class="btn btn-success btn-xs" data-toggle="modal" data-target="#modal_comment" data-note-id="@item.Id">
+                            <span class="glyphicon glyphicon-comment"></span>
+                        </button>
+
+                        @Bootstrap.LinkButton("/Note/Edit/" + item.Id, "warning", "btn-xs", "Düzenle", "edit", string.Empty)
+
+                        @Bootstrap.LinkButton("/Note/Details/" + item.Id, "info", "btn-xs", "Detaylar", "search", string.Empty)
+
+                        @Bootstrap.LinkButton("/Note/Delete/" + item.Id, "danger", "btn-xs", "Kaldır", "trash", string.Empty)
+                    </td>
+                </tr>
+            }
+
+        </table>
+
+    </div>
+
+</div>
+
+@Bootstrap.ModalPopup(id: "modal_comment", title: "Yorumlar")
+
+<script src="~/Scripts/comment.js"></script>

@@ -1,0 +1,1 @@
+Komut satırından ilgili dizine girerek make komutu vererek derleyiniz.

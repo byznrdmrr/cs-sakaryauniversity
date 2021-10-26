@@ -1,0 +1,12 @@
+C:\Users\ASUS\Desktop\Beyz\3.SINIF\veritabanı yönetim sistemleri\proje\restaurant\restaurant\bin\Debug\restaurant.exe.config
+C:\Users\ASUS\Desktop\Beyz\3.SINIF\veritabanı yönetim sistemleri\proje\restaurant\restaurant\bin\Debug\restaurant.exe
+C:\Users\ASUS\Desktop\Beyz\3.SINIF\veritabanı yönetim sistemleri\proje\restaurant\restaurant\bin\Debug\restaurant.pdb
+C:\Users\ASUS\Desktop\Beyz\3.SINIF\veritabanı yönetim sistemleri\proje\restaurant\restaurant\obj\Debug\restaurant.csprojResolveAssemblyReference.cache
+C:\Users\ASUS\Desktop\Beyz\3.SINIF\veritabanı yönetim sistemleri\proje\restaurant\restaurant\obj\Debug\restaurant.Properties.Resources.resources
+C:\Users\ASUS\Desktop\Beyz\3.SINIF\veritabanı yönetim sistemleri\proje\restaurant\restaurant\obj\Debug\restaurant.csproj.GenerateResource.Cache
+C:\Users\ASUS\Desktop\Beyz\3.SINIF\veritabanı yönetim sistemleri\proje\restaurant\restaurant\obj\Debug\restaurant.exe
+C:\Users\ASUS\Desktop\Beyz\3.SINIF\veritabanı yönetim sistemleri\proje\restaurant\restaurant\obj\Debug\restaurant.pdb
+C:\Users\ASUS\Desktop\Beyz\3.SINIF\veritabanı yönetim sistemleri\proje\restaurant\restaurant\obj\Debug\restaurant.frmGiris.resources
+C:\Users\ASUS\Desktop\Beyz\3.SINIF\veritabanı yönetim sistemleri\proje\restaurant\restaurant\obj\Debug\restaurant.frmMenu.resources
+C:\Users\ASUS\Desktop\Beyz\3.SINIF\veritabanı yönetim sistemleri\proje\restaurant\restaurant\obj\Debug\restaurant.frmMasalar.resources
+C:\Users\ASUS\Desktop\Beyz\3.SINIF\veritabanı yönetim sistemleri\proje\restaurant\restaurant\obj\Debug\restaurant.frmSiparis.resources

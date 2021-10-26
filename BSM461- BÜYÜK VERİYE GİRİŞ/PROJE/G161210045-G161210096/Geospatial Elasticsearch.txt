@@ -1,0 +1,119 @@
+Geo Distance
+
+// İndex oluşturma ve Mappings ekleme
+
+PUT 167.172.61.77:9200/test-geo/_search
+
+{
+  "mappings": {
+    "properties": {
+      "location": {
+        "type": "geo_point"
+      },
+      "stitle": {
+        "type": "text"
+      }
+    }
+  }
+}
+
+---------------------------------------------
+
+//Tek Veri Ekleme
+
+{ 
+    "stitle" : "Süzer Villaları", 
+    "location" : {
+            "lon" : 29.041403, 
+            "lat" : 41.079451
+    
+    }
+}
+
+---------------------------------------------
+
+// Çoklu veri ekleme
+
+elasticsearch_loader --index incidents --type incident json *.json
+
+---------------------------------------------
+
+1. Sorgu : 
+Circle çizdirme ve circle içerisinde kalan pointleri bulma
+
+{
+  "query": {
+    "bool": {
+      "must": {
+      "match_all": {}
+      },
+    "filter": {
+        "geo_distance": {
+          "distance": "700m",
+          "location": {
+            "lon":29.04707908630371,
+            "lat":40.99518838768076
+          }
+        }
+      }
+    }
+  }
+}
+
+
+----------------------------------------------
+
+2. Sorgu :
+Verilen bir point'e en yakın pointlerden başlayarak sıralama
+
+{
+  "query": {
+    "bool": {
+      "must": {
+        "match_all": {}
+      }
+    }
+  },
+  "sort": [
+    {
+      "_geo_distance": {
+        "location": {
+            "lon":29.04707908630371,
+            "lat":40.99518838768076
+        },
+        "order": "asc",
+        "unit": "km",
+        "distance_type": "plane"
+      }
+    }
+  ]
+}
+
+------------------------------------------------
+
+3. Sorgu :
+Çizilen bir boundary içerisinde kalan pointleri bulma
+
+{
+  "query": {
+    "bool": {
+      "must": {
+        "match_all": {}
+      },
+      "filter": {
+        "geo_bounding_box": {
+          "location": {
+            "top_left": {
+              "lat": 40.90053886975936,
+              "lon": 40.91069101159384
+            },
+            "bottom_right": {
+              "lat": 29.163122177124023,
+              "lon": 29.18509483337402
+            }
+          }
+        }
+      }
+    }
+  }
+}
